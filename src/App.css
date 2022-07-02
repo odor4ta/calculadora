@@ -1,1 +1,39 @@
+.App {
+ height: 100vh;
+ padding-top: 10px;
+ background-color: #ffc8dd;
+ font-family: Lato, sans-serif;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ }
 
+ .tatilearn-logo-contenedor {
+   width: 100%;
+   height: 50px;
+   margin: 9px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tatilearn-logo {
+  height: 70px;
+}
+
+.contenedor-calculadora {
+  width: 400px;  
+  height: 600px;
+  padding: 14px;
+  background-color: #DDE5B6;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
