@@ -1,5 +1,5 @@
 import React from 'react';
-import '../hojas-de-estilo/Boton.css'
+import '../hojas-de-estilo/Boton.css';
 
 function Boton(props) {
 
@@ -9,10 +9,12 @@ function Boton(props) {
 
 	return (
 		<div
-			className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>
+			className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
+			onClick={() => props.manejarClic(props.children)}>
 			{props.children}
 		</div>
 	);
 }
 
 export default Boton;
+
