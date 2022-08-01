@@ -17,4 +17,3 @@ function Boton(props) {
 }
 
 export default Boton;
-
