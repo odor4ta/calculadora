@@ -6,17 +6,20 @@ import BotonClear from './componentes/BotonClear';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 
+const operators = ['*', '+', '-', '/']
+
 function App() {
 
   const [input, setInput] = useState('');
 
   const agregarInput = val => {
+    const inputToArray = input.split('')
+    if (operators.includes(inputToArray[inputToArray.length - 1]) && operators.includes(val)) return
     setInput(input + val);
   };
 
-  const calcularResultado = () => {
-    setInput(evaluate(input));
-  };
+  const calcularResultado = () => setInput(evaluate(input))
+
 
   return (
     <div className='App'>
